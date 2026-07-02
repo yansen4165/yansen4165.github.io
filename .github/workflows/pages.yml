@@ -9,7 +9,7 @@ permissions:
   id-token: write
 concurrency:
   group: pages
-  cancel-in-progress: true
+  cancel-in-progress: false
 jobs:
   deploy:
     environment:
@@ -36,7 +36,7 @@ jobs:
                   continue
               s2 = s
               if gm:
-                  s2 = s2.replace('<!-- 9fd7132278016ebaaaad4e15a22605c60739d79c -->', gm)
+                  s2 = s2.replace('<!-- 9415e529c1e211741308a3fe07fbef -->', gm)
               if bm:
                   s2 = s2.replace('<!--  -->', bm)
               if s2 != s:
