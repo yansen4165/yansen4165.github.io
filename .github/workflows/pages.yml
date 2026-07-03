@@ -36,9 +36,9 @@ jobs:
                   continue
               s2 = s
               if gm:
-                  s2 = s2.replace('<!-- 9415e529c1e211741308a3fe07fbef -->', gm)
+                  s2 = s2.replace('<!-- bb1ad47032bc91fa548feba0b624c4a734 -->', gm)
               if bm:
-                  s2 = s2.replace('<!--  -->', bm)
+                  s2 = s2.replace('<!-- 8c54bae1cbe3a072b770053707a57065622c1b159353ba19 -->', bm)
               if s2 != s:
                   p.write_text(s2, encoding='utf-8')
                   count += 1
